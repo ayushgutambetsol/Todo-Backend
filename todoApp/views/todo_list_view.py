@@ -1,9 +1,9 @@
 from flask import request, jsonify
 from flask_restful import Resource
 from flask_sqlalchemy import SQLAlchemy
-from static.app import db
-from static.todoApp.model.todo_list_model import Todo
-from static.todoApp.utils.serialize_data import TodoListSerializer
+from app import db
+from todoApp.model.todo_list_model import Todo
+from todoApp.utils.serialize_data import TodoListSerializer
 import logging
 
 logger = logging.getLogger(__name__)

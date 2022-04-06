@@ -1,1 +1,1 @@
-web: gunircorn static.app:app
+web: gunircorn app:app
