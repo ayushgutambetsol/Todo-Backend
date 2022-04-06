@@ -16,5 +16,5 @@ SQLAlchemy==1.4.32
 Werkzeug==2.1.0
 WTForms==3.0.1
 zipp==3.7.0
-Flask-Cors== 3.0.10
+Flask-Cors==3.0.10
 gunicorn==20.1.0
