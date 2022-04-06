@@ -1,1 +1,1 @@
-web: export FLASK_APP=static && flask run
+web: gunircorn static:app
