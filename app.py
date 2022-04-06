@@ -6,11 +6,11 @@ import logging
 from logger_config import custom_logger
 
 
-db = SQLAlchemy()
-migrate = Migrate()
+# db = SQLAlchemy()
+# migrate = Migrate()
 
-logger = logging.getLogger('static')
-logger = custom_logger(logger)
+# logger = logging.getLogger('static')
+# logger = custom_logger(logger)
 
 
 # def create_app(test_config=None):
