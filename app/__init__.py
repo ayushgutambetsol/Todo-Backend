@@ -1,5 +1,7 @@
+"""
+TODO : Identify issues with this file
+"""
 import logging
-
 from flask import Flask
 from flask_cors import CORS
 from flask_migrate import Migrate
@@ -27,7 +29,7 @@ def create_app(test_config=None):
     cors.init_app(app, resource={r"/api/*": {"origins": "*"}})
 
     from app.todoApp import todo_list
-    app.register_blueprint(todo_list, url_prefix='/api/v1')
+    app.register_blueprint(todo_list)
 
     return app
 

@@ -8,6 +8,16 @@
             <set />
           </value>
         </entry>
+        <entry key="/a.dummy">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/fragment.py">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../../../ZMC/todoapp/to-do-flask/app/__init__.py">
           <value>
             <set />
@@ -19,6 +29,21 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../../../ZMC/todoapp/to-do-flask/app/logger_config.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../ZMC/todoapp/to-do-flask/app/todoApp/model/todo_list_model.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../ZMC/todoapp/to-do-flask/app/todoApp/utils/serialize_data.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../ZMC/todoapp/to-do-flask/app/todoApp/views/todo_list_view.py">
           <value>
             <set />
           </value>
@@ -49,6 +74,16 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/sample">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/todoApp/__init__.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/todoApp/constants/response_constants.py">
           <value>
             <set />
           </value>

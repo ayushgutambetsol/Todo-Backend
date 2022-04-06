@@ -1,2 +1,5 @@
 2022-04-06 23:15:37,657 - app.todoApp.views.todo_list_view - DEBUG - serialize_instance called here
 2022-04-07 00:02:50,608 - app.todoApp.views.todo_list_view - DEBUG - serialize_instance called here
+2022-04-07 01:02:56,789 - app.todoApp.views.todo_list_view - DEBUG - serialize_instance called here
+2022-04-07 01:29:46,912 - app.todoApp.views.todo_list_view - DEBUG - serialize_instance called here
+2022-04-07 01:30:43,518 - app.todoApp.views.todo_list_view - DEBUG - serialize_instance called here
