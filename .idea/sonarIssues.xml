@@ -23,7 +23,17 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/Procfile">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/__init__.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/app_service.log">
           <value>
             <set />
           </value>
@@ -33,7 +43,17 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/run.py">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/sample">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/todoApp/utils/serialize_data.py">
           <value>
             <set />
           </value>
