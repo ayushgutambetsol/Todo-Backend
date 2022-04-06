@@ -1,4 +1,7 @@
 class TodoListSerializer:
+    """
+    TODO : Suggest enhancements to the class
+    """
     def __init__(self, todo_list, model_type, many=False):
         self.todo_list = todo_list
         self.model_type = model_type
