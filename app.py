@@ -53,7 +53,7 @@ def home():
 
 @app.route("/add", methods=["POST"])
 def add():
-    title = request.get_json(force=True)['title']
+    title = request.form.get("title") or request.get_json(force=True)['title']
     new_todo = Todo(title=title, complete=False)
     db.session.add(new_todo)
     db.session.commit()
