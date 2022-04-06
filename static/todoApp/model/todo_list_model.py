@@ -1,4 +1,4 @@
-from static import db
+from static.app import db
 
 
 class Todo(db.Model):

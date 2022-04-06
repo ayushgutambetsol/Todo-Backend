@@ -1,7 +1,7 @@
 from flask import request, jsonify
 from flask_restful import Resource
 from flask_sqlalchemy import SQLAlchemy
-from static import db
+from static.app import db
 from static.todoApp.model.todo_list_model import Todo
 from static.todoApp.utils.serialize_data import TodoListSerializer
 import logging
