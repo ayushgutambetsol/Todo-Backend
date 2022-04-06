@@ -1,1 +1,1 @@
-web: gunicorn static:app
+web: export FLASK_APP=static && flask run
