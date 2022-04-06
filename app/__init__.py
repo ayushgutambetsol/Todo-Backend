@@ -1,27 +1,28 @@
 from flask import Flask
+from flask_cors import CORS
 from flask_migrate import Migrate
 from flask_sqlalchemy import SQLAlchemy
 import logging
 
 from app.logger_config import custom_logger
 
-
 db = SQLAlchemy()
 migrate = Migrate()
 
-logger = logging.getLogger('static')
+logger = logging.getLogger('app')
 logger = custom_logger(logger)
+cors = CORS()
 
-def app(test_config=None):
+def create_app(test_config=None):
     app = Flask(__name__)
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://maepgdupzvcqru:2de24244b6ca685cd41dc98ae29c30c448ded6a6bcb0ff02afbd66dd5a35730f@ec2-52-73-155-171.compute-1.amazonaws.com:5432/dbmevkl5rhd3tg'
-
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:password@localhost/SampleDb'
+    app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     from app.todoApp.model.todo_list_model import Todo
     db.init_app(app)
     migrate.init_app(app, db)
+    cors.init_app(app,resource={r"/api/*": {"origins": "*"}})
 
     from app.todoApp import todo_list
-    app.register_blueprint(todo_list, url_prefix="/api/v1")
+    app.register_blueprint(todo_list, url_prefix='/api/v1')
 
     return app
-
