@@ -1,0 +1,2 @@
+2022-04-06 22:53:43,655 - app.todoApp.views.todo_list_view - ERROR - Error: __init__() got an unexpected keyword argument 'model_type'
+2022-04-06 22:55:36,231 - app.todoApp.views.todo_list_view - DEBUG - serialize_instance called here
