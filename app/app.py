@@ -12,7 +12,6 @@ migrate = Migrate()
 logger = logging.getLogger('static')
 logger = custom_logger(logger)
 
-
 def create_app(test_config=None):
     app = Flask(__name__)
     app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:password@localhost/SampleDb'
@@ -25,3 +24,7 @@ def create_app(test_config=None):
     app.register_blueprint(todo_list, url_prefix="/api/v1")
 
     return app
+
+@app.routes('/')
+def home():
+    return "hello-world"
