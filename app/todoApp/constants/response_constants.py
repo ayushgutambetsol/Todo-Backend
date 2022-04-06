@@ -4,6 +4,7 @@ class ResponseConstants:
     SUCCESS_MESSAGE_CREATE_TODO = "Todo created successfully"
     SUCCESS_MESSAGE_UPDATE_TODO = "Todo updated successfully"
     SUCCESS_MESSAGE_DELETE_TODO = "Todo deleted successfully"
+    SUCCESS_PATCH_TODO = "Todo patched successfully"
 
     # Error Messages
     SOMETHING_WENT_WRONG = "Something went wrong"

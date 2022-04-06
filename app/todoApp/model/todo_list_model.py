@@ -6,6 +6,7 @@ class Todo(db.Model):
     title = db.Column(db.String(100))
     complete = db.Column(db.Boolean,default=False)
     date_modified = db.Column(db.DateTime, default=db.func.current_timestamp())
+    tag = db.Column(db.String(100), default='others')
 
     @staticmethod
     def get_all():
@@ -47,3 +48,7 @@ class Todo(db.Model):
         todo.date_modified = db.func.current_timestamp()
         db.session.commit()
         return todo
+
+    @staticmethod
+    def get_all_tags():
+        return Todo.query.with_entities(Todo.tag).distinct().all()
