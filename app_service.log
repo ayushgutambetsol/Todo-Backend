@@ -1,1 +1,10 @@
 2022-04-06 23:15:37,657 - app.todoApp.views.todo_list_view - DEBUG - serialize_instance called here
+2022-04-07 02:00:47,340 - app.todoApp.views.todo_list_view - INFO - serialize_instance called here
+2022-04-07 02:00:47,340 - app.todoApp.views.todo_list_view - ERROR - Error: type object 'Todo' has no attribute 'tag'
+2022-04-07 02:02:29,427 - app.todoApp.views.todo_list_view - INFO - serialize_instance called here
+2022-04-07 02:03:14,518 - app.todoApp.views.todo_list_view - INFO - New task created
+2022-04-07 02:03:17,519 - app.todoApp.views.todo_list_view - INFO - serialize_instance called here
+2022-04-07 02:05:58,377 - app.todoApp.views.todo_list_view - INFO - serialize_instance called here
+2022-04-07 02:07:23,364 - app.todoApp.views.todo_list_view - INFO - serialize_instance called here
+2022-04-07 02:08:16,205 - app.todoApp.views.todo_list_view - INFO - serialize_instance called here
+2022-04-07 02:08:36,034 - app.todoApp.views.todo_list_view - INFO - serialize_instance called here
