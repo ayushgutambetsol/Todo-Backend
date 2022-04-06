@@ -13,6 +13,7 @@ logger = logging.getLogger('app')
 logger = custom_logger(logger)
 cors = CORS()
 
+
 def create_app(test_config=None):
     app = Flask(__name__)
     app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:password@localhost/SampleDb'
@@ -20,9 +21,14 @@ def create_app(test_config=None):
     from app.todoApp.model.todo_list_model import Todo
     db.init_app(app)
     migrate.init_app(app, db)
-    cors.init_app(app,resource={r"/api/*": {"origins": "*"}})
+    cors.init_app(app, resource={r"/api/*": {"origins": "*"}})
 
     from app.todoApp import todo_list
     app.register_blueprint(todo_list, url_prefix='/api/v1')
 
     return app
+
+
+if __name__ == '__main__':
+    app = create_app()
+    app.run(debug=True,host='0.0.0.0')
