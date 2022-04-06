@@ -80,6 +80,7 @@ def edit(id):
     title = request.get_json(force=True)['title']
     todo = Todo.query.get(id)
     todo.title = title
+    todo.complete = request.get_json(force=True)['completed']
     db.session.commit()
     return {"message": "successfully updated task"}, 200
     
