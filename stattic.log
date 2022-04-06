@@ -233,3 +233,17 @@ sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) connection to serve
 
 (Background on this error at: https://sqlalche.me/e/14/e3q8)
 2022-04-05 20:01:43,434 - static.todoApp.views.todo_list_view - DEBUG - serialize_instance called here
+2022-04-06 15:29:49,836 - static.todoApp.views.todo_list_view - ERROR - Error: (psycopg2.OperationalError) connection to server at "ec2-52-73-155-171.compute-1.amazonaws.com" (52.73.155.171), port 5432 failed: FATAL:  role "maepgdupzvcqru" is not permitted to log in
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2022-04-06 15:29:55,726 - static.todoApp.views.todo_list_view - ERROR - Error: (psycopg2.OperationalError) connection to server at "ec2-52-73-155-171.compute-1.amazonaws.com" (52.73.155.171), port 5432 failed: FATAL:  role "maepgdupzvcqru" is not permitted to log in
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2022-04-06 15:31:52,532 - static.todoApp.views.todo_list_view - ERROR - Error: (psycopg2.errors.UndefinedTable) relation "todo" does not exist
+LINE 2: FROM todo
+             ^
+
+[SQL: SELECT todo.id AS todo_id, todo.title AS todo_title, todo.complete AS todo_complete, todo.date_modified AS todo_date_modified 
+FROM todo]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2022-04-06 15:36:11,239 - static.todoApp.views.todo_list_view - DEBUG - serialize_instance called here
